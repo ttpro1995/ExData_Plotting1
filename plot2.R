@@ -28,9 +28,9 @@ x<-subset_data$TimeStamp
 y<-as.numeric(as.character(subset_data$Global_active_power))
 y_label <- "Global Active Power (kilowatts)"
 
+TYPE_LINE <-"l"
+plot(x,y,ylab=y_label,xlab = "",type=TYPE_LINE)
 
-plot(x,y,ylab=y_label,type="l")
 
-
-dev.copy(png,filename="plot2.png"); 
-dev.off ();
+dev.copy(png,filename="plot2.png") 
+dev.off ()
